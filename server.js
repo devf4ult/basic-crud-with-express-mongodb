@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser= require('body-parser');
 const app = express();
 const MongoClient = require('mongodb').MongoClient
-const connectionString = "mongodb+srv://devfault:k1ll1t0r0us@cluster0.wsehm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const connectionString = "mongodb+srv://<username>:<password>@cluster0.wsehm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static('public'))
